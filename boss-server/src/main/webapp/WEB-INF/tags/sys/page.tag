@@ -1,6 +1,6 @@
 <%@ tag language="java" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
-<%@ attribute name="page" type="com.thinkgem.jeesite.common.persistence.Page" required="true" description="分页"%>
+<%@ attribute name="page" type="com.thinkgem.jeesite.common.db.Page" required="true" description="分页"%>
 <%@ attribute name="pageSize" type="java.lang.Integer" required="false" description="每页大小" %>
 <%@ attribute name="funcParam" type="java.lang.String" required="false" description="参数" %>
 <%@ attribute name="pageNo" type="java.lang.Integer" required="false" description="当前页" %>

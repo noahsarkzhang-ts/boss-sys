@@ -523,6 +523,18 @@ public class Page<T> {
 		return getPageSize();
 	}
 
+	public int getLength() {
+		return length;
+	}
+
+	public int getSlider() {
+		return slider;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
 //	/**
 //	 * 获取 Spring data JPA 分页对象
 //	 */

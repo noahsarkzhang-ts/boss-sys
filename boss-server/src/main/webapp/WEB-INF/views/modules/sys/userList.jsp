@@ -81,6 +81,8 @@
 		</c:forEach>
 		</tbody>
 	</table>
-	<div class="pagination">${page}</div>
+	<%-- <div class="pagination">${page}</div> --%>
+	
+	<sys:page page="${page}"/>
 </body>
 </html>
