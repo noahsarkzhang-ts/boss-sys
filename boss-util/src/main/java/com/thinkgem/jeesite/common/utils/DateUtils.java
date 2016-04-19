@@ -4,6 +4,7 @@
 package com.thinkgem.jeesite.common.utils;
 
 import java.text.ParseException;
+import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
@@ -25,6 +26,15 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 	 */
 	public static String getDate() {
 		return getDate("yyyy-MM-dd");
+	}
+	
+	public static Date getYesterDay(Date date)
+	{
+		Calendar cal=Calendar.getInstance();
+		cal.setTime(date);
+        cal.add(Calendar.DATE,-1);
+       
+        return cal.getTime();
 	}
 	
 	/**
